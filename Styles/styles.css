@@ -1,0 +1,122 @@
+body {
+  font-family: "Antonio", sans-serif;
+  background-color: #000000;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #c8102e;
+}
+
+header img {
+  max-width: 500px;
+  height: auto;
+}
+
+nav {
+  background-color: #c8102e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #c8102e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #c8102e;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section div {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+section img {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  margin: 10px 20px;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.card {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.foto-personajes {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.imagen-inicio {
+  display: block;
+  margin: 20px auto;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ir-arriba {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #c8102e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.ir-arriba:hover {
+  color: #ffd700;
+  text-decoration: underline;
+  background-color: #a50e23;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
