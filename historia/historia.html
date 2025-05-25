@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Last Of Us - Historia</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../imagenes/iconos/favicon.ico"
+    />
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header>
       <img
         src="../imagenes/logos/logo2.png"
         alt="The Last Of Us Logo"
-        height="150"
+        loading="lazy"
       />
       <h1 id="historia">Historia</h1>
     </header>
@@ -35,11 +41,17 @@
       <section>
         <div class="card">
           <h2>Sinopsis</h2>
-          <img
-            src="../imagenes/historia/serie-juego.png"
-            alt="Comparación de la portada de la serie y la portada del videojuego"
-            height="200px"
-          />
+
+          <figure>
+            <img
+              src="../imagenes/historia/serie-juego.png"
+              alt="Comparación de la portada de la serie y la portada del videojuego"
+              class="imagenes-general"
+              loading="lazy"
+            />
+            <figcaption>Comparación entre la serie y el videojuego.</figcaption>
+          </figure>
+
           <p>
             <em>The Last of Us</em> es una serie de televisión de drama
             postapocalíptico, acción y suspenso, basada en el popular videojuego
@@ -54,19 +66,29 @@
             otros sobrevivientes desesperados.
           </p>
         </div>
-
         <div class="card">
           <h2>Locaciones</h2>
-          <img
-            src="../imagenes/historia/bostonian.png"
-            alt="Bostonian Museum en Calgary"
-            height="200px"
-          />
-          <img
-            src="../imagenes/historia/legislature.png"
-            alt="Alberta Legislature Building de Edmonton."
-            height="200px"
-          />
+          <div class="galeria">
+            <figure>
+              <img
+                src="../imagenes/historia/bostonian.png"
+                alt="Bostonian Museum en Calgary"
+                class="imagenes-general"
+                loading="lazy"
+              />
+              <figcaption>Bostonian Museum en Calgary.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="../imagenes/historia/legislature.png"
+                alt="Alberta Legislature Building de Edmonton."
+                class="imagenes-general"
+                loading="lazy"
+              />
+              <figcaption>Alberta Legislature Building de Edmonton.</figcaption>
+            </figure>
+          </div>
+
           <p>
             La serie fue filmada principalmente en <strong>Canadá</strong>,
             sobre todo en la ciudad de <strong>Calgary</strong>, en la provincia
@@ -81,11 +103,17 @@
 
         <div class="card">
           <h2>Creadores, Productores y Guionistas</h2>
-          <img
-            src="../imagenes/historia/creadores.png"
-            alt="Bella Ramsey y Pedro Pascal posando con los creadores Craig Mazin y Neil Druckmann"
-            height="200px"
-          />
+
+          <figure>
+            <img
+              src="../imagenes/historia/creadores.png"
+              alt="Bella Ramsey y Pedro Pascal posando con los creadores Craig Mazin y Neil Druckmann"
+              class="imagenes-general"
+              loading="lazy"
+            />
+            <figcaption>Elenco y creadores de la serie.</figcaption>
+          </figure>
+
           <p>
             La serie fue creada por <strong>Craig Mazin</strong>, conocido por
             ser el creador de la aclamada miniserie <em>Chernobyl</em>.
@@ -104,7 +132,7 @@
     </main>
 
     <footer>
-      <p>2025 - Parcial 1 - Lautaro Rajib Cadelago</p>
+      <p>2025 - Parcial 2 - Lautaro Rajib Cadelago</p>
     </footer>
   </body>
 </html>
