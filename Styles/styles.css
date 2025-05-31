@@ -28,6 +28,9 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 900;
 }
 
 nav a {
@@ -211,6 +214,9 @@ li {
   font-weight: bold;
   text-align: center;
   transition: 0.3s ease;
+  position: sticky;
+  bottom: 5px;
+  z-index: 900;
 }
 
 .ir-arriba:hover {
