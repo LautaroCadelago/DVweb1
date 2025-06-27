@@ -1,0 +1,130 @@
+.barra-navegacion {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  z-index: 1001;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ffd700;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.logo-navegacion {
+    flex-shrink: 0;
+    padding-bottom: 5px;
+}
+
+.logo-navegacion img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
+.titulo-nav {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 1.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+.etiqueta-hamburguesa {
+  display: flex;
+  cursor: pointer;
+  z-index: 1100;
+  padding: 5px;
+  flex-shrink: 0;
+  padding-bottom: 5px;
+}
+
+.icono-lista {
+  cursor: pointer;
+  fill: white;
+  height: 50px;
+  width: 50px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7));
+}
+
+.etiqueta-hamburguesa .icono-hamburguesa {
+  display: block;
+}
+
+.etiqueta-hamburguesa .icono-cerrar {
+  display: none;
+  fill: red;
+}
+
+.menu-hamburguesa:checked ~ .etiqueta-hamburguesa .icono-hamburguesa {
+  display: none;
+}
+
+.menu-hamburguesa:checked ~ .etiqueta-hamburguesa .icono-cerrar {
+  display: block;
+}
+
+.lista-enlaces {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 100%;
+  right: -400px;
+  left: auto;
+  height: 0;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.3s ease-in-out;
+  padding-right: 0px;
+  padding-top: 5px;
+  width: 280px;
+  z-index: 999;
+  border-bottom: 2px solid #ffd700;
+  border-left: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
+}
+
+.menu-hamburguesa:checked ~ .lista-enlaces {
+  right: 0;
+  height: 425px;
+}
+
+.lista-enlaces .enlace {
+  font-size: 1.3rem;
+  color: white;
+  background-color: #a50e23;
+  margin: 10px;
+  width: fit-content;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.2rem 0.7rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  z-index: 900;
+}
+
+.lista-enlaces .enlace:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 12px #fd0511;
+}
+

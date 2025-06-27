@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N.W.A. - Sitio Oficial</title>
+  <link rel="icon" type="image/x-icon" href="img/logo/nwa_logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+
+      <div>
+        <img src="img/logo/nwa_logo.png" alt="Logo de N.W.A" />
+      </div>
+
+      <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
+      <label class="label_hamburguesa" for="menu_hamburguesa">
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="50px"
+          viewBox="0 -960 960 960"
+          width="50px"
+          fill="#fd0511"
+          class="lista-icono hamburger-icon">
+          <path
+          fill-rule="evenodd"
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        height="50px" viewBox="0 -960 960 960"
+        width="50px" fill="#fd0511"
+          class="lista-icono close-icon">
+          <path
+            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </label>
+
+      <ul class="ul_links">
+        <li class="li_links">
+          <a href="#inicio" class="link">Inicio</a>
+        </li>
+        <li class="li_links">
+          <a href="#integrantes" class="link">Integrantes</a>
+        </li>
+        <li class="li_links">
+          <a href="#discografia" class="link">Discografía</a>
+        </li>
+        <li class="li_links">
+          <a href="#galeria" class="link">Galería</a>
+        </li>
+        <li class="li_links">
+          <a href="#contacto" class="link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="section-main">
+      
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="video/indexvideo.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="contenido">
+        <h1>The World's Most Dangerous Group</h1>
+        <p>
+          N.W.A. (Niggaz Wit Attitudes) fue un grupo estadounidense de hip hop
+          de Compton, California. Fueron uno de los grupos pioneros y más
+          controvertidos del subgénero del gangsta rap. Activos desde 1987
+          hasta 1991, el grupo fue responsable de revolucionar el sonido y la
+          dirección del hip hop, trayendo consigo la realidad de la vida en el
+          gueto. Su impacto cultural es innegable.
+        </p>
+      </div>
+
+      <div class="spotify">
+        <iframe style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/6KIKRz9eSTXdNsGUnomdtW?utm_source=generator" width="100%"
+          height="100" frameborder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <a class="flecha">
+      <span class="material-symbols-outlined">
+        keyboard_arrow_down
+      </span>
+    </a>
+
+    <!-- INTEGRANTES -->
+    <section id="integrantes">
+      <h2>Integrantes</h2>
+      <div class="integrantes-grid">
+        <div class="card">
+          <figure>
+            <!-- Ice Cube -->
+            <img src="img/integrantes/icecube.png" alt="Ice Cube" class="foto-integrantes" />
+            <figcaption>ICE CUBE</figcaption>
+          </figure>
+          <p>
+            O'Shea Jackson Sr., conocido profesionalmente como Ice Cube, es un
+            rapero, actor y cineasta estadounidense. Fue una figura clave en
+            la configuración del gangsta rap, con letras crudas y una voz
+            distintiva.
+          </p>
+        </div>
+
+        <div class="card">
+          <figure>
+            <!-- MC Ren -->
+            <img src="img/integrantes/mcren.png" alt="Mc Ren" class="foto-integrantes" />
+            <figcaption>MC REN</figcaption>
+          </figure>
+          <p>
+            Lorenzo Jerald Patterson, más conocido como MC Ren, es un rapero,
+            compositor y productor discográfico. Se unió a N.W.A. en 1987 y se
+            destacó por sus letras agresivas y su estilo de rap.
+          </p>
+        </div>
+
+        <div class="card">
+          <figure>
+            <!-- Eazy-E -->
+            <img src="img/integrantes/eazye.png" alt="Eazy-E" class="foto-integrantes" />
+            <figcaption>EAZY-E</figcaption>
+          </figure>
+          <p>
+            Eric Lynn Wright, más conocido como Eazy-E, fue un rapero,
+            productor discográfico y ejecutivo. Es considerado el "Padrino del
+            Gangsta Rap" y fundó el sello discográfico Ruthless Records, donde
+            N.W.A. lanzó su música.
+          </p>
+        </div>
+
+        <div class="card">
+          <figure>
+            <!-- DJ Yella -->
+            <img src="img/integrantes/djyella.png" alt="Dj Yella" class="foto-integrantes" />
+            <figcaption>DJ YELLA</figcaption>
+          </figure>
+          <p>
+            Antoine Carraby, profesionalmente conocido como DJ Yella, es un
+            DJ, rapero y productor musical. Fue el DJ del grupo y también
+            produjo varias de sus canciones, siendo fundamental en el sonido
+            característico de N.W.A.
+          </p>
+        </div>
+
+        <div class="card">
+          <figure>
+            <!-- Dr. Dre -->
+            <img src="img/integrantes/drdre.png" alt="Dr Dre" class="foto-integrantes" />
+            <figcaption>DR DRE</figcaption>
+          </figure>
+          <p>
+            Andre Romelle Young, más conocido como Dr. Dre, es un rapero,
+            productor discográfico y ejecutivo. Co-fundador de N.W.A., jugó un
+            papel crucial en la producción de sus álbumes y en la evolución
+            del sonido G-funk.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOGRAFIA -->
+    <section id="discografia">
+      <h2>Discografía</h2>
+      <div class="albumes-grid">
+        <div class="card">
+          <figure>
+            <img src="img/discos/straight_outta_compton.png" alt="Cover del Album Straight Outta Compton  "
+              class="album-cover" />
+            <figcaption>Straight Outta Compton (1988)</figcaption>
+          </figure>
+          <p>
+            El álbum debut de N.W.A. que definió el género del gangsta rap.
+            Contiene éxitos como "Straight Outta Compton" y "Fuck tha Police".
+          </p>
+          <div>
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/track/5n8Aro6j1bEGIy7Tpo7FV7?utm_source=generator" width="100%"
+              height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="card">
+          <figure>
+            <img src="img/discos/niggaz4life.png" alt="Cover del Album Niggaz4Life" class="album-cover" />
+            <figcaption>Niggaz4Life (1991)</figcaption>
+          </figure>
+          <p>
+            El segundo y último álbum de estudio del grupo, aclamado por su
+            sonido maduro y sus letras contundentes, alcanzando el número 1 en
+            las listas de Billboard 200.
+          </p>
+          <div>
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/track/0y0IhcBx3C1oEMtL4oFkBp?utm_source=generator" width="100%"
+              height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria">
+      <h2>Galería</h2>
+
+      <div class="galeria-grid">
+        <div class="galeria-img">
+          <img src="img/galeria/nwa-concierto.webp" alt="N.W.A. en concierto" />
+        </div>
+
+        <div class="galeria-img">
+          <img src="img/galeria/nwa-studio.png" alt="N.W.A. en estudio" />
+        </div>
+
+        <div class="galeria-img">
+          <img src="img/galeria/nwa-revista.png" alt="N.W.A. portada de Billboard" />
+        </div>
+
+        <div class="galeria-img">
+          <img src="img/galeria/nwa-rollingstones.png" alt="N.W.A. portada de Rolling Stones" />
+        </div>
+
+
+        <div class="galeria-img">
+          <img src="img/galeria/nwa-27añosdespues.png" alt="N.W.A. 27 anños despues" />
+        </div>
+
+        <div class="galeria-img">
+          <img src="img/galeria/nwa-halloffame.png" alt="N.W.A. Rock and Roll Hall of Fame" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+
+      <div class="contacto-form-container">
+        <p>
+          ¿Tenés alguna consulta o querés contactarnos? ¡Llená el formulario!
+        </p>
+
+        <form action="./confirmacion/confirmacion.html">
+          <label for="nombre">Nombre:
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required />
+          </label>
+
+          <label for="email">Email:
+            <input type="email" id="email" name="email" placeholder="usuario@email.com" required />
+          </label>
+
+          <label for="mensaje">Mensaje:
+            <textarea id="mensaje" name="mensaje" maxlength="500" required></textarea>
+          </label>
+
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 - Artistas - Lautaro Rajib Cadelago</p>
+  </footer>
+</body>
+
+</html>

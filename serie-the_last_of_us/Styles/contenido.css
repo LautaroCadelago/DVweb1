@@ -1,0 +1,271 @@
+.tarjeta {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #ff0000;
+  text-align: left;
+  backdrop-filter: blur(3px);
+  margin: 40px auto;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.01);
+}
+
+/* Tarjeta del index */
+.tarjeta-index {
+  margin: 175px 0 20px 2vw;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.grilla-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grilla-tarjetas .tarjeta {
+  margin-bottom: 0;
+}
+
+.tarjeta ul {
+  text-align: left;
+  margin-left: 20px;
+  padding: 0;
+  margin: 15px 0 0 0;
+  line-height: 1.6;
+}
+
+figure figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #ffd700;
+  font-size: 0.9em;
+}
+
+/* Temporadas */
+.poster-temporada {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 10px #ffd700;
+  margin-top: 15px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Personajes */
+.grilla-personajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.tarjeta-personaje {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #ffd700;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-personaje:hover {
+  transform: scale(1.02);
+}
+
+.foto-personajes {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+/* Locaciones */
+.grilla-locaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.tarjeta-locacion {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  text-align: center;
+  backdrop-filter: blur(3px);
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-locacion:hover {
+  transform: scale(1.02);
+}
+
+.imagen-locacion {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 15px auto;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+.imagen-comparacion {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 10px #ffd700;
+}
+
+/* Creadores */
+.grilla-creadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.tarjeta-creador {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #ffd700;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-creador:hover {
+  transform: scale(1.02);
+}
+
+.foto-creador {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  margin-bottom: 10px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contenedor-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.video-temporada {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Eventos */
+.grilla-informacion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tarjeta-informacion {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #ffd700;
+  text-align: left;
+  backdrop-filter: blur(3px);
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-informacion:hover {
+  transform: scale(1.02);
+}
+
+.tarjeta-informacion h2 {
+  text-align: center;
+  color: #ffd700;
+  margin-top: 0;
+}
+
+.tarjeta-informacion ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.tarjeta-informacion li {
+  margin-bottom: 10px;
+}
+
+.eventos-proximos {
+  margin-bottom: 40px;
+}
+
+.imagen-evento {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 10px #ffd700;
+  margin-bottom: 5px;
+}
