@@ -6,6 +6,7 @@
   margin: 20px auto;
   max-width: 600px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .contenedor-redes {
@@ -21,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .contenedor-redes a {
@@ -99,4 +101,42 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #a00d28;
+}
+
+@media (max-width: 768px) {
+  .contenedor-formulario,
+  .contenedor-redes {
+    margin: 15px auto;
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .contenedor-redes a {
+    font-size: 1.1em;
+  }
+
+  .contenedor-redes a img {
+    width: 28px;
+  }
+
+  button[type="submit"] {
+    padding: 8px 12px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-formulario,
+  .contenedor-redes {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .contenedor-redes a {
+    font-size: 1em;
+  }
+
+  .contenedor-redes a img {
+    width: 24px;
+  }
 }

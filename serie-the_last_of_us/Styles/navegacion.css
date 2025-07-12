@@ -1,114 +1,61 @@
-.barra-navegacion {
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.barra-navegacion-custom {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  border-bottom: 2px solid #ffd700 !important;
   min-height: 80px;
-  z-index: 1001;
-  box-sizing: border-box;
-  border-bottom: 2px solid #ffd700;
-  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px 20px;
 }
 
-.logo-navegacion {
-    flex-shrink: 0;
-    padding-bottom: 5px;
-}
-
-.logo-navegacion img {
+.logo-navegacion-bootstrap {
   max-width: 150px;
   height: auto;
   display: block;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-}
-
-.titulo-nav {
-    flex-grow: 1;
-    text-align: center;
-    margin: 0;
-    color: white;
-    font-size: 1.8em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.menu-hamburguesa {
-  display: none;
-}
-
-.etiqueta-hamburguesa {
-  display: flex;
-  cursor: pointer;
-  z-index: 1100;
-  padding: 5px;
-  flex-shrink: 0;
   padding-bottom: 5px;
 }
 
-.icono-lista {
-  cursor: pointer;
-  fill: white;
-  height: 50px;
-  width: 50px;
+.titulo-nav-bootstrap {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 10px;
+  color: white;
+  font-size: 1.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+  padding: 5px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28253, 5, 17, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; /* Custom red color for the icon */
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7));
 }
 
-.etiqueta-hamburguesa .icono-hamburguesa {
-  display: block;
+.offcanvas.text-bg-dark {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border-left: 2px solid #ffd700 !important;
 }
 
-.etiqueta-hamburguesa .icono-cerrar {
-  display: none;
-  fill: red;
+.offcanvas-header {
+  border-bottom: 1px solid #ffd700;
 }
 
-.menu-hamburguesa:checked ~ .etiqueta-hamburguesa .icono-hamburguesa {
-  display: none;
+.offcanvas-title {
+  color: #ffd700 !important;
 }
 
-.menu-hamburguesa:checked ~ .etiqueta-hamburguesa .icono-cerrar {
-  display: block;
-}
-
-.lista-enlaces {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
-  position: absolute;
-  top: 100%;
-  right: -400px;
-  left: auto;
-  height: 0;
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
+.offcanvas-body .navbar-nav {
   gap: 0.3rem;
-  transition: all 0.3s ease-in-out;
-  padding-right: 0px;
-  padding-top: 5px;
-  width: 280px;
-  z-index: 999;
-  border-bottom: 2px solid #ffd700;
-  border-left: 2px solid #ffd700;
-  border-top: 2px solid #ffd700;
+  padding-right: 0px !important;
+  padding-top: 5px !important;
 }
 
-.menu-hamburguesa:checked ~ .lista-enlaces {
-  right: 0;
-  height: 425px;
-}
-
-.lista-enlaces .enlace {
+.offcanvas-body .nav-item .nav-link {
   font-size: 1.3rem;
-  color: white;
+  color: white !important;
   background-color: #a50e23;
   margin: 10px;
   width: fit-content;
@@ -123,8 +70,66 @@
   z-index: 900;
 }
 
-.lista-enlaces .enlace:hover {
+.offcanvas-body .nav-item .nav-link:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 6px 12px #fd0511;
 }
 
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1em;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    transform: none;
+    box-shadow: none;
+    color: #ffd700 !important;
+    border-color: #ffd700 !important;
+  }
+
+  .titulo-nav-bootstrap {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .barra-navegacion-custom {
+    min-height: 60px;
+    padding: 8px 15px;
+  }
+
+  .logo-navegacion-bootstrap {
+    max-width: 120px;
+  }
+
+  .titulo-nav-bootstrap {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .barra-navegacion-custom {
+    min-height: 50px;
+    padding: 5px 10px;
+  }
+
+  .logo-navegacion-bootstrap {
+    max-width: 100px;
+  }
+
+  .titulo-nav-bootstrap {
+    font-size: 1.2em;
+  }
+}
